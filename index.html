@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Job Application Tracker</title>
+    <link rel="icon" href="assets/ok fav.png" >
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Job Application Tracker</h1>
+
+        <div class="stats-box">
+
+            <div class="stat-item">
+                <p class="stat-label">Total</p>
+                <p class="stat-number blue" id="totalCount">0</p>
+            </div>
+
+            <div class="stat-item">
+                <p class="stat-label">Interview</p>
+                <p class="stat-number green" id="interviewCount">0</p>
+            </div>
+
+            <div class="stat-item">
+                <p class="stat-label">Rejected</p>
+                <p class="stat-number red" id="rejectedCount">0</p>
+            </div>
+
+        </div>
+
+        <div class="jobs-box">
+            
+            <div class="jobs-header">
+                <h2 class="jobs-title">Available Jobs</h2>
+                <span class="jobs-count" id="jobsCount">0 jobs</span>
+            </div>
+
+            <div class="tabs">
+                <button onclick="switchTab('all')" id="tab-all" class="tab active">All</button>
+                <button onclick="switchTab('interview')" id="tab-interview" class="tab">Interview</button>
+                <button onclick="switchTab('rejected')" id="tab-rejected" class="tab">Rejected</button>
+            </div>
+
+            
+            <div id="jobsList" class="jobs-list"></div>
+       
+       
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
