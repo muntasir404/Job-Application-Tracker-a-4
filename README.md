@@ -14,5 +14,9 @@ Event Bubbling is when an event like click moves up from child element to parent
 It works by JS listening on parents after child got the event.
 
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
+Event Delegation mane ekta parent element handle kore child elements er events.
+Useful, karon kom code lagbe ar nirdisto dynamic elements er event o kaj korbe.
+
+### 5. What is the difference between preventDefault() and stopPropagation() methods?
 
 
